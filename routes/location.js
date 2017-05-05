@@ -2,7 +2,7 @@
 var request = require('request')
 
 // const LoginService = require('qcloud-weapp-server-sdk').LoginService;
-API_URL = 'http://apis.map.qq.com/ws/geocoder/v1/?key=D2MBZ-GRNRU-WFFVT-4XKS7-GWQ55-RPFMJ&location='
+var API_URL = 'http://apis.map.qq.com/ws/geocoder/v1/?key=D2MBZ-GRNRU-WFFVT-4XKS7-GWQ55-RPFMJ&location='
 
 module.exports = (req, res) => {
     console.log(req.params)
