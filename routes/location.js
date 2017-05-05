@@ -6,7 +6,7 @@ var API_URL = 'http://apis.map.qq.com/ws/geocoder/v1/?key=D2MBZ-GRNRU-WFFVT-4XKS
 
 module.exports = (req, res) => {
     console.log(req.query)
-    var url = API_URL + req.query.q
+    var url = API_URL + req.query.p
     console.log(url)
     request(url, function (error, response, body) {
         console.log('error:', error); // Print the error if one occurred
