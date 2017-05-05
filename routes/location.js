@@ -15,7 +15,7 @@ module.exports = (req, res) => {
         if (error) {
             res.json({'code': -1, 'message': 'nolocation'})
         }
-        res.json({'code': 0, 'message': 'ok', 'location': body.result.address_component.city});
+        res.json({'code': 0, 'message': 'ok', 'location': JSON.parse(body).result.address_component.city});
 
     });
 
