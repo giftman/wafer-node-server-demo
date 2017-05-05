@@ -14,8 +14,5 @@ module.exports = (req, res) => {
     res.json({
         'code': 0,
         'message': 'ok',
-        'data': {
-            'userInfo': data.userInfo,
-        },
     });
 };
